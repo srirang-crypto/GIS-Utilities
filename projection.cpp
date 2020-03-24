@@ -282,36 +282,6 @@ int main(int argc, char const *argv[])
 	}
 	routes.listFeatures();
 
-	// Point point1, point2, testPoint, intersectionPoint;
-	// Equation eq, eqP;
-	// Segment testSegment;
-	// bool position;
-
-	// cout << "Enter two points\n";
-	// cin >> point1.x >> point1.y >> point2.x >> point2.y;
-
-	// testSegment = createSegment(point1, point2);
-
-	// //cout << getDistance(point1, point2) << endl;
-	// eq = getEquation(testSegment);
-	// displayEquation(eq);
-
-	// cout << "Enter point\n";
-	// cin >> testPoint.x >> testPoint.y;
-
-	// eqP = getPerpendicularEquation(eq, testPoint);
-	// displayEquation(eqP);
-
-	// intersectionPoint = getIntersectionPoint(eq, eqP);
-	// displayPoint(intersectionPoint);
-
-	// position = getPosition(testSegment, intersectionPoint);
-
-	// if (position == 1)
-	// 	cout << "On the segment\n";
-	// else
-	// 	cout << "Not on segment\n";
-
 	for (int i = 0; i < points.getfeatureCount(); i++)
 	{
 		Point testPoint, closestPoint;
