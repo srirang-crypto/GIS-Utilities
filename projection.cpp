@@ -301,19 +301,9 @@ int main(int argc, char const *argv[])
 				eq = getEquation(testSegment);
 				eqP = getPerpendicularEquation(eq, testPoint);
 
-				displayEquation(eq);
-				displayEquation(eqP);
-
 				intersectionPoint = getIntersectionPoint(eq, eqP);
-
-				displayPoint(intersectionPoint);
-
 				bool onSegment;
-
 				onSegment = getPosition(testSegment, intersectionPoint);
-
-				cout << onSegment << endl;
-
 				if (onSegment == 0){
 					cout << "notonsegment\n";
 					if (getDistance(intersectionPoint, testSegment.node1) < getDistance(intersectionPoint, testSegment.node2))
@@ -321,8 +311,6 @@ int main(int argc, char const *argv[])
                     else{
                         intersectionPoint = testSegment.node2;}
                 }
-				displayPoint(intersectionPoint);
-
 				distance = getDistance(testPoint, intersectionPoint);
 				if (distance < min_distance)
 				{
